@@ -1,0 +1,35 @@
+<header class="app-header">
+  <div class="app-container">
+    <div class="app-logo">
+      <a href="/" class="app-logo-link">
+        <img src="{{ logo_url }}" class="app-logo-image">
+        <span class="app-title">Total Football Fantasy</span>
+      </a>
+    </div>
+    <div class="menu-container">
+      <button id="menu-button" class="menu-button" aria-controls="menu" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="menu" class="menu hidden">
+    <div class="menu-content">
+      <ul>
+        <li><a href="/" class="menu-link">Home</a></li>
+        <li><a href="/compare" class="menu-link">Compare Players</a></li>
+        <li><a href="/table" class="menu-link">League Table</a></li>
+        <li><a href="/fixtures" class="menu-link">Fixtures</a></li>
+        <li><a href="/gameweek" class="menu-link">Gameweek</a></li>
+        <li><a href="/seriea" class="menu-link">Serie A</a></li>
+        <li><a href="/laliga" class="menu-link">LaLiga</a></li>
+        <li><button id="json-endpoint-btn" class="menu-link">Players JSON</button></li>
+        <li><button id="compare-json-btn" class="menu-link">Compare JSON</button></li>
+        <li><button id="gameweek-json-btn" class="menu-link">Gameweek JSON</button></li>
+        <li><a href="/api/endpoint" class="menu-link">API Endpoint</a></li>
+      </ul>
+    </div>
+  </div>
+</header>

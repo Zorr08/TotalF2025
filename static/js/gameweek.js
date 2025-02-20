@@ -1,0 +1,1 @@
+// No JavaScript needed for the updated table view

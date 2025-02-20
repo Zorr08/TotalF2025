@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <script src="/static/js/mobile-menu.js"></script>
+    <title>Premier League Table</title>
+  </head>
+  <body>
+    {% include 'partials/_header.html' %}
+    <div class="main-content">
+      <div class="table-container">
+        <table id="league-table">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Club</th>
+              <th>Played</th>
+              <th>Won</th>
+              <th>Drawn</th>
+              <th>Lost</th>
+              <th>GF</th>
+              <th>GA</th>
+              <th>GD</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="10" class="loading">Loading table data...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="/static/js/table.js"></script>
+  </body>
+</html>

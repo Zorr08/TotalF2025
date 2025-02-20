@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+SQLAlchemy
+beautifulsoup4
+flask-static-compress
+flask==3.0.1
+gunicorn
+requests
+werkzeug==3.0.1

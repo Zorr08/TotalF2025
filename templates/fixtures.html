@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <script src="/static/js/mobile-menu.js"></script>
+    <title>Premier League Fixtures</title>
+  </head>
+  <body>
+    {% include 'partials/_header.html' %}
+    <div class="main-content">
+      <div class="fixtures-container">
+        <div class="gameweek-selector">
+          <label for="gameweek-select">Select Gameweek:</label>
+          <select id="gameweek-select">
+            <option value="all">All Gameweeks</option>
+          </select>
+        </div>
+        <div id="fixtures-list">
+          <div class="loading">Loading fixtures...</div>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/fixtures.js"></script>
+  </body>
+</html>
